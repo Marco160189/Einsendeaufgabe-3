@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="de">
+  <meta charset="utf-8" />
+  <title>Erste eigenen Versuche</title>
+  <meta name="description" content="VFH ICS WEBSTART" />
+  <meta name="author" content="Marco Behnke" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <style>
+    body {
+      padding: 10px 30px 20px 30px;
+    }
+    h1 {
+      text-align: center;
+    }
+    h2 {
+      font-style: italic;
+      color: blue;
+    }
+    h3 {
+      font-style: oblique;
+      color: red;
+    }
+    strong {
+      font-size: 5pt;
+    }
+    span {
+      font-weight: lighter;
+    }
+    p {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    #changeImage {
+      background-color: black;
+    }
+    .page-container {
+      background-color: rgb(30, 229, 243);
+      width: 680px;
+      min-height: 400px;
+      padding: 14px;
+      margin: 14px auto;
+    }
+
+    #game-panel .ref {
+      display: block;
+    }
+  </style>
+  <body>
+    <h1>Mein erster Versuch</h1>
+
+    <h2>Navigation/Inhaltsübersicht</h2>
+    <nav>
+      <ul>
+        <li><a href="#h2MeinText">Mein Text</a></li>
+        <li><a href="#h2Video">Mein Video</a></li>
+        <li><a href="#berlinerFeuerwehr">Berliner Feuerwehr</a></li>
+        <li><a href="#bilder">Bilder</a></li>
+        <li><a href="#wiki">Weitere Infos</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <h2 id="h2MeinText">Mein Text</h2>
+      <p>
+        Ich begrüße alle auf meiner Seite und hoffe, dass ich den Anforderungen
+        entspreche :D
+      </p>
+      <p>
+        Ich selbst arbeite, wie man vielleicht an den Bildern sehen kann, bei
+        der Berliner Feuerwehr. Mein Zweck der Seite ist es einfach, ein wenig
+        Einblicke in das tägliche Einsatzgeschehen zu geben Viel Spass dabei
+      </p>
+      <p>
+        Anbei gibt es ein paar Erklärungen und Einblicke, also seid gespannt
+      </p>
+      <p>
+        Informationen kann man auch gern von der Homepage der Berliner Feuerwehr
+        im Link finden
+      </p>
+    </section>
+
+    <section>
+      <h2 id="h2Video">Mein Video</h2>
+      <picture>
+        <source media="(webroot\smile.png)" srcset="" />
+        <img src="" alt="" />
+      </picture>
+
+      <video src="imagefilm.mp4{}" controls>
+        Dieses Video zeigt einen Imgagfilm der Berliner Feuerwehr <br />
+        Ihr Browser kann dieses Video nicht wiedergeben. Sie können es unter
+        <a href="#">https://youtu.be/FApoA0FczVo</a> abrufen.
+      </video>
+    </section>
+
+    <section>
+      <h2 id="berlinerFeuerwehr">
+        <a href="https://www.berliner-feuerwehr.de/">Berliner Feuerwehr</a>
+      </h2>
+      <h3>
+        Punkt 1- Einsatzfahrzeuge
+      </h3>
+      <ul>
+        <li>
+          <a
+            href="https://www.berliner-feuerwehr.de/technik/fahrzeuge/loeschfahrzeuge/loesch-und-hilfeleistungsfahrzeuge/lhf-20/12-dls/"
+            >Lösch-und Hilfeleistungsfahrzeug (LHF)</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.berliner-feuerwehr.de/technik/fahrzeuge/rettungsdienstfahrzeuge/rettungswagen/"
+            >Rettungswagen</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.berliner-feuerwehr.de/technik/fahrzeuge/hubrettungsfahrzeuge/drehleiterfahrzeuge/"
+            >Drehleiterwagen</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.berliner-feuerwehr.de/technik/fahrzeuge/sonderfahrzeuge/ruestwagen-3-rw-3/"
+            >Rüstwagen</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 id="bilder">Bilder</h2>
+      <img
+        id="changeImage"
+        src="R.jpg"
+        title="Rettungswagen"
+        style="height: 250px; width: 400px;"
+      />
+    </section>
+
+    <section>
+      <h2 id="kommentare">Kommentare</h2>
+      <p style="color: red; cursor: pointer;" onclick="kommentarAnzeigen()">
+        Kommentare anzeigen
+      </p>
+      <textarea
+        id="kommentar"
+        onkeydown="changeCounter()"
+        maxlength="500"
+        rows="10"
+        style="width: 100%; display: none;"
+        name="Einsendeaufgabe"
+        class="input"
+      >
+      </textarea>
+      <span id="counter" style="display: none;">500</span>
+    </section>
+
+    <h2>2. Statistik</h2>
+    <nav>
+      <!--Hier ist mein Kommentar tägliche Fallzahlen ergänzen-->
+    </nav>
+
+    <section>
+      <h2>Allgemeine Übersicht des täglichen Einsatzgeschehens</h2>
+      <p>
+        Rund 80 Prozent ihrer Einsätze leistet die Berufsfeuerwehr in der
+        Notfallrettung, also in der Versorgung und Betreuung von verletzten oder
+        akut erkrankten Menschen. Diese Einsätze werden durch
+        Rettungswagenbesatzungen geleistet. Zur Unterstützung bei
+        lebensbedrohlichen Verletzungen oder Erkrankungen stehen im gesamten
+        Stadtgebiet Notarzteinsatzfahrzeuge bereit. Im Notfallrettungsdienst
+        werden von den Einsatzkräften umfangreiche notfallmedizinische
+        Kenntnisse, menschliches Einfühlungsvermögen und ein professioneller
+        Umgang mit Menschen in Not gefordert.
+      </p>
+      <p>viel Text</p>
+    </section>
+    <section id="wiki">
+      <div class="page-container">
+        <h1>Spiele Wiki</h1>
+        <section id="game-selector">
+          <span>Spiel: </span>
+          <select>
+            <option value="" disabled selected>Bitte auswählen...</option>
+            <option value="game1.json">Mau Mau</option>
+            <option value="game2.json">Mensch ärgere Dich nicht</option>
+            <option value="game3.json">Dame</option>
+          </select>
+        </section>
+        <section id="game-panel">
+          <h2 class="title">Kein Spiel ausgewählt.</h2>
+          <a class="ref" target="_blank" href="#">
+            <span class="label"></span>
+          </a>
+          <p class="description"></p>
+        </section>
+      </div>
+    </section>
+    <section>
+      <!-- später soll hier noch content hin -->
+    </section>
+    <footer>
+      <!-- es gibt noch keinen Footer -->
+    </footer>
+
+    <!-- einzeiliger Kommentar -->
+
+    <!-- und das ist ein mehrzeiliger Kommentar
+  zu dem Text mit <p>Hallo</p>
+  Letzte Zeile des Kommentars -->
+
+    <script type="text/javascript">
+      // Bilder switchen
+      // https://www.youtube.com/watch?v=rD2Tnc-W31A
+      function changeImage(imageName) {
+        var pickImage = document.getElementById("changeImage");
+        pickImage.src = imageName.src;
+        pickImage.alt = imageName.alt;
+        pickImage.title = imageName.title;
+      }
+
+      var images = [
+        {
+          src: "OIP.jpg",
+          alt: "Lösch-und Hilfeleistungsfahrzeug",
+          title: "Löschfahrzeug der neusten Generation",
+        },
+        {
+          src: "Rs.jpg",
+          alt: "Einige Übersichten von Fahrzeugen",
+          title: "Drehleiterwagen",
+        },
+        { src: "R.jpg", alt: "", title: "Rettungswagen" },
+      ];
+      var i = 0;
+
+      setInterval(function () {
+        changeImage(images[i]);
+        i = i + 1;
+        if (i >= images.length) {
+          i = 0;
+        }
+      }, 3000);
+
+      // Kommentarbox anzeigen
+      function kommentarAnzeigen() {
+        var textbox = document.getElementById("kommentar");
+        var counter = document.getElementById("counter");
+
+        textbox.style.display = "block";
+        counter.style.display = "block";
+      }
+
+      // Bilder switchen
+      function changeCounter() {
+        var textbox = document.getElementById("kommentar");
+        var counter = document.getElementById("counter");
+
+        length = 500 - textbox.value.length;
+
+        counter.innerHTML = length;
+      }
+    </script>
+    <script>
+      "use strict"; // ältere JavaScript Systax verbieten
+
+      // select-Element zur Spielauswahl im DOM finden
+      var gameSelector = document.querySelector("#game-selector select");
+
+      // Auf Änderungen des select-Elements reagieren
+      gameSelector.addEventListener("change", function (event) {
+        // Referenz auf select-Elements
+        var select = this;
+        // Ausgewählten Wert auslesen
+        var gameFileName = select.value;
+
+        // Informationen zum Spiel per AJAX laden.
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            // Inhalt der Daten von JSON in JavaScript-Objekt wandeln
+            var gameData = JSON.parse(this.responseText);
+
+            // Anzeige für das Spiel mit geladeden Daten aktualisieren
+            updateGamePanel(gameData);
+          }
+        };
+        xhttp.open("GET", "./" + gameFileName, true);
+        xhttp.send();
+      });
+
+      var updateGamePanel = function (gameData) {
+        // Anzeigebereich für Spielinformationen im DOM finden
+        var gamePanel = document.querySelector("#game-panel");
+
+        // Titel setzen
+        var title = gamePanel.querySelector(".title");
+        title.innerHTML = gameData.title;
+
+        // Quellenangabe setzen
+        var ref = gamePanel.querySelector(".ref");
+        var label = ref.querySelector(".label");
+        ref.href = gameData.ref;
+        label.innerHTML = gameData.ref;
+
+        // Beschreibung setzten
+        var description = gamePanel.querySelector(".description");
+        description.innerHTML = gameData.description;
+      };
+    </script>
+  </body>
+</html>
